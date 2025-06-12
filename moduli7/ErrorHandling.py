@@ -10,7 +10,7 @@ try:
 except ZeroDivisionError:
     print("ke gabu per shkak qe je duke pjestuar me 0")
 
-    #second example
+    #second example.txt
     fruits={
         "apples":5,
         "banana":3,
@@ -30,7 +30,7 @@ except ZeroDivisionError:
             print("an error occorred while parsing the data:", e)
 
 
-# fourtgh example
+# fourtgh example.txt
 try:
     resultati=10/2
 except ZeroDivisionError:
@@ -38,7 +38,7 @@ except ZeroDivisionError:
 else:
     print("division successful,Result", resultati)
 
-#fifth example
+#fifth example.txt
 try:
     resultati=10/0
 except ZeroDivisionError:
