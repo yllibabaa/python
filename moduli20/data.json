@@ -1,0 +1,12 @@
+{
+    "name": "JOHN DOE",
+    "age": 30,
+    "city": "prishtina",
+    "address": {
+        "street": "main street",
+        "postalcode": 123,
+        "city": "prishtina"
+    },
+    "hobbies": [{ "type":"reading"}, {"type":"riding"}]
+
+}
