@@ -1,11 +1,13 @@
 from fastapi import FastAPI
 from models import Developer, Project
 
+
 app = FastAPI()
+
 
 @app.post("/developers/")
 def create_developer(developer: Developer):
-    return {"message": "Developer created sucessullf", "developer": developer}
+    return {"message": "Developer created successfully", "developer": developer}
 
 
 @app.post("/projects/")
@@ -15,12 +17,11 @@ def create_project(project: Project):
 
 @app.get("/projects/")
 def get_projects():
+    # This is a placeholder; in a real application, you'd fetch this from a database
     sample_project = Project(
-        title="sample project",
-        description="this is a description.",
+        title="Sample Project",
+        description="This is a sample project",
         languages=["Python", "JavaScript"],
-        lead_developer=Developer(name="Alice", experience=5)
+        lead_developer=Developer(name="Jane Doe", experience=5)
     )
     return {"projects": [sample_project]}
-
-

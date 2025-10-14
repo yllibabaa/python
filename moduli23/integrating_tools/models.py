@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-class developer(BaseModel):
+class Developer(BaseModel):
     name:str
     experience:Optional[int]= None
 
